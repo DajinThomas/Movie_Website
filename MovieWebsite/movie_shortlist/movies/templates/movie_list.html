@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Shortlist</title>
+</head>
+<body>
+    <h2>Movies Shortlist</h2>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                <img src="{{ movie.image_url.url }}" width="100" height="100" >
+                <a href="{% url 'movie_detail' pk=movie.pk %}">{{ movie.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

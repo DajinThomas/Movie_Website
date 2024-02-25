@@ -1,0 +1,14 @@
+<!-- movies/templates/movies/movie_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.title }} - Movie Detail</title>
+</head>
+<body>
+    <h2>{{ movie.title }} - Movie Detail</h2>
+    <img src="{{ movie.image_url.url }}" alt="{{ movie.title }} Image">
+    <p>Genre: {{ movie.genre }}</p>
+    <p>Release Date: {{ movie.release_date }}</p>
+    <p>Synopsis: {{ movie.synopsis }}</p>
+</body>
+</html>
